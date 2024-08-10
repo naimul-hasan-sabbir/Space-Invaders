@@ -128,8 +128,7 @@ while running:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 playerX_change = 0
 
-    # 5 = 5 + -0.1 -> 5 = 5 - 0.1
-    # 5 = 5 + 0.1
+
 
     playerX += playerX_change
     if playerX <= 0:
@@ -166,7 +165,7 @@ while running:
             enemyX[i] = random.randint(0, 736)
             enemyY[i] = random.randint(50, 150)
 
-        enemy(enemyX[i], enemyY[i], i)
+        enemy(enemyX[1], enemyY[1], 1)
 
     # Bullet Movement
     if bulletY <= 0:
